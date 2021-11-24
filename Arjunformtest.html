@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: rgb(241, 241, 245);
+        }
+
+        .container {
+            padding: 50px;
+            background-color: rgb(248, 247, 247);
+        }
+       
+
+        hr {
+            border: 2px solid rgb(8, 8, 8);
+            margin-bottom: 40px;
+        }
+
+        .gap{
+            margin: 10px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            
+                <h1 class="text-center"> STUDENT REGISTRATION FORM</h1>
+            
+            <hr>
+            <div class="row gap">
+                <div class="col-4 ">
+            <label>Firstname:</label>
+                </div>
+                <div class="col-8 ">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Firstname" required="">
+        </div></div>
+        <div class="row gap">
+        <div class="col-4 ">
+            <label>Lastname:</label>
+        </div>
+            <div class="col-8">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Lastname" required="">
+        </div></div>
+        <div class="row gap">
+        <div class="col-4 ">
+            <label>Aadhar Number: </label>
+        </div>
+            <div class="col-8">
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Aadhar Number" required="">
+        </div>
+    </div>
+           
+    <div class="row gap">
+        <div class="col-4 ">
+                <label>blood group:</label>
+            </div>
+            <div class="col-8">
+                <select id="inputState" class="form-select" required="">
+                    <option value="O">O</option>
+                    <option value="A+">A+</option>
+                    <option value="B+">B+</option>
+                </select>
+            </div>
+        </div>
+               
+                <!--------------------------Date Of Birth----------------------------------->
+                <div class="row gap">
+                    <div class="col-4 ">
+                <label for="birthday">Date Of Birthday:</label>
+            </div>
+            <div class="col-8">
+                <input id="inputState" class="form-control" type="date" id="birthday" name="birthday" required="">
+            </div>
+        </div>
+                <div class="row gap">
+                    <div class="col-4 ">
+                <label>Religion:</label>
+            </div>
+            <div class="col-8">
+                <select id="inputState" class="form-select">
+                    <option value="hindu">hindu</option>
+                    <option value="christian">christian</option>
+                    <option value="muslim">muslim</option>
+                    <option value="others">others</option>
+                </select>
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-4 ">
+                    <label>
+                        first graduate:
+                    </label>
+                </div>
+                <div class="col-8" required="">
+                    <input type="radio" value="yes" name="first graduate"> yes
+                    <input type="radio" value="yes" name="first graduate"> no
+                </div>
+            </div>
+               
+                <!-----------------------Qualification---------------------------------------->
+                <div class="row gap">
+                    <div class="col-4 ">
+                <label>Qualification </label>
+                            </div>
+                            <div class="col-8" required="">
+                                <input type="checkbox" name="HighSchool" value="High School">
+                                High School(10th)<br>
+                                <input type="checkbox" name="HigherSchool" value="Higher School">
+                                Higher School(12th)<br>
+                                <input type="checkbox" name="Graduation" value="Graduation">
+                                Graduation(Bachelors)<br>
+                                <input type="checkbox" name="PostGraduation" value="Post Graduation">
+                                Post Graduation(Masters)<br>
+                                <input type="checkbox" name="Phd" value="Phd">
+                                Phd
+                            </div>
+                        </div>
+                            
+                <div class="row gap">
+                    <div class="col-4 ">
+                    <label>
+                        Course :
+                    </label>
+                </div>
+                <div class="col-8">
+                    <select id="inputState" class="form-select" required="">
+                        <option value="Course">Course</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BBA">BBA</option>
+                        <option value="B.Tech">B.Tech</option>
+                        <option value="MBA">MBA</option>
+                        <option value="MCA">MCA</option>
+                        <option value="M.Tech">M.Tech</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="row gap">
+                <div class="col-4 ">
+                    <label>
+                        Gender :
+                    </label>
+                </div>
+                <div class="col-8" required="">
+                    <input type="radio" value="Male" name="gender"  > Male
+                    <input type="radio" value="Female" name="gender"> Female
+                    <input type="radio" value="Other" name="gender"> Other
+
+                </div>
+            </div>
+               
+                
+                <div class="row gap">
+                    <div class="col-4 ">
+                <label>Phone:</label>
+            </div>
+            <div class="col-8">
+                    <input type="text" id="inputState" class="form-control" placeholder="phone no." maxlength="10" required="">
+                
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-4 ">
+                <label>
+                    District:
+                </label>
+            </div>
+            <div class="col-8">
+                <select id="inputState" class="form-select" required="">
+                    <option value="-1" selected="">select..</option>
+                    <option value="TAMILNADU">TAMILNADU</option>
+                    <option value="UP">UP</option>
+                    <option value="Goa">GOA</option>
+                    <option value="Patna">PATNA</option>
+                </select>
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-4 ">
+                <label>
+                    State:
+                </label>
+            </div>
+            <div class="col-8">
+                <select id="inputState" class="form-select" required="">
+                    <option value="-1" selected="">select..</option>
+                    <option value="New Delhi">NEW DELHI</option>
+                    <option value="Mumbai">MUMBAI</option>
+                    <option value="india">INDIA</option>
+                    <option value="Bihar">BIHAR</option>
+                </select>
+            </div>
+        </div>
+        <div class="row gap">
+            <div class="col-4 ">
+                Current Address :
+            </div>
+            <div class="col-8">
+                <textarea cols="80" rows="5" class="form-control" placeholder="Current Address" value="address" required="">
+</textarea>
+</div>
+</div>
+<div class="row gap">
+    <div class="col-4 ">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+</div>
+<div class="col-8">
+      <input type="email" class="form-control" placeholder="Email" id="inputEmail3" required="">
+    </div>
+  </div>
+  <div class="row gap">
+    <div class="col-4 ">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+</div>
+<div class="col-8">
+      <input type="password" class="form-control" placeholder="Password" id="inputPassword3" required="">
+    </div>
+  </div>
+  <div class="row gap">
+    <div class="col-4 ">
+                <label for="psw-repeat">Re-type Password</label>
+            </div>
+            <div class="col-8">
+                <input type="password" class="form-control" placeholder="Retype Password" name="psw-repeat" required="">
+            </div>
+        </div>
+                <input type="submit" class="btn btn-primary" value="Submit">
+                <input type="reset" class="btn btn-primary" value="Reset">
+
+                <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+                <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-85417367-1"></script>
+                <script async="" src="https://drv.tw/inc/wd.js"></script>
+            </div>
+
+            </div>
+        </div>
+
+    </form>
+    
+        <script src="js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
